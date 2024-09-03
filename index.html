@@ -1,0 +1,1712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>TheEvent - Bootstrap Event Template</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: TheEvent
+    Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+  <style>
+    .nav-item {
+      margin-top: 10px; /* Adjust the value as needed */
+    }
+    .prizes-section {
+  padding: 60px 0;
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+.prize-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for the cards */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Ensure content stays within card */
+}
+
+.prize-card img {
+  height: 300px; /* Fixed height for images */
+  width: 300px;
+  object-fit: cover; /* Ensure the image covers the entire area */
+}
+
+
+.evaluation-section {
+  padding: 60px 0;
+  background-color: #ffffff; /* White background */
+  }
+
+.criteria-list h4 {
+  margin-top: 20px; /* Adds space between the criteria headings */
+}
+
+.criteria-list ul {
+  margin-top: 10px; /* Adds space between the heading and list */
+  padding-left: 20px; /* Indent the list */
+}
+
+.criteria-list ul li {
+  margin-bottom: 10px; /* Adds space between each list item */
+}
+
+.team-section {
+  padding: 60px 0;
+  background-color: #f9f9f9; /* Light background color */
+}
+
+.team-card {
+  text-align: center;
+  margin-bottom: 30px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.team-card:hover {
+  background-color: #e0f7fa; /* Light blue hover color */
+  transform: translateY(-10px); /* Slight upward movement on hover */
+}
+
+.team-img {
+  margin-bottom: 20px;
+}
+
+.team-img img {
+  width: 150px; /* Fixed width for images */
+  height: 150px; /* Fixed height for images */
+  border-radius: 50%; /* Rounded images */
+  transition: transform 0.3s;
+}
+
+.team-card:hover img {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.team-info h4 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.team-info p {
+  font-size: 1em;
+  color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .team-card {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .team-card {
+    margin-bottom: 20px;
+  }
+}
+
+.sponsor-button-container {
+    list-style: none;
+    text-align: center;
+  }
+
+  .sponsor-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+
+  .sponsor-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 5px 15px rgba(0, 91, 187, 0.3);
+  }
+
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .sponsor-button {
+      font-size: 16px;
+      padding: 12px 24px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .sponsor-button {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+
+    .hack img {
+      width: 450;
+      height: 250;
+  }
+}
+
+
+/* Base style for the image */
+.responsive-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px; /* Max width for larger screens */
+}
+
+/* Media query for small screens */
+@media (max-width: 767px) {
+  .responsive-img {
+    max-width: 100%; /* Ensure it fits within smaller screens */
+  }
+}
+
+/* Media query for medium screens */
+@media (min-width: 768px) and (max-width: 991px) {
+  .responsive-img {
+    max-width: 90%; /* Slightly smaller for medium screens */
+  }
+}
+
+/* Media query for large screens */
+@media (min-width: 992px) {
+  .responsive-img {
+    max-width: 80%; /* Image takes up less space on large screens */
+  }
+}
+
+  </style>
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+       <!--<h1><a href="#main">Hack<span>4</span>Earth</a></h1>-->
+        <a href="#intro" class="scrollto"><img src="img/sustainble.png" alt="" title="Hack4Earth"></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="#about">Hack4Earth</a></li>
+          <li><a href="#schedule">Dates</a></li>
+          <li><a href="#schedul">Tracks</a></li>
+          <li><a href="#prizes">Prizes </a></li>
+          <li><a href="#venue">Judge</a></li>
+          <li><a href="#supporters">Sponsors</a></li>
+          <li><a href="#organizing-team">orgTeam</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="buy-tickets"><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAEkL0ztUMjNVUFhMMVhSS1VBRVRGR0E1SkQ2UktYMC4u">be a Sponsor</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container wow fadeIn">
+      <h1 class="mb-4 pb-0"><span>Hack4Earth:</span> Hack for   a Sustainable <br>Future</br> 
+        </h1>
+        
+      <h2 class="mb-4 pb-0" style="color: white !important;"  > (Emergent Technologies for Sustainable Development)</h2>
+     
+      <h4 class="mb-4 pb-0" style="color: white !important;">
+        Organized in conjunction with the 21st International Conference on Computer<br> Systems and Applications
+        <a href="https://aiccsa.net/AICCSA2024/" style="color: white !important; text-decoration: underline;">
+          AICCSA 2024
+        </a>
+      </h4>
+      
+      <p class="mb-4 pb-0"> 04-18 October, Tunisia Polytechnic School , Tunisia</p>
+
+     <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video"
+        data-autoplay="true"></a>-->
+      <a href="#about" class="about-btn scrollto">Register</a>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!--==========================
+      About Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>About The Event</h2>
+            <p><span> Hack4Earth</span>  is a dynamic hackathon dedicated to crafting innovative solutions for climate change and environmental sustainability. This event, held in conjunction with the 21st IEEE International Conference on AICCSA, brings together experts and enthusiasts to develop technologies and strategies aligned with the UN's Sustainable Development Goals (SDGs).</p>
+          </div>
+          <div class="col-lg-3">
+            <h3>Where</h3>
+            <p>Tunsia Polytechnic School, Marsa-Tunis </p>
+          </div>
+          <div class="col-lg-3">
+            <h3>When</h3>
+            <p> <br>01/10-26/10 2024 </p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+
+
+  <section id="hack" class="evaluation-section  wow fadeInUp ">
+    <div class="container" style=" padding-left: 80px; padding-right: 80px;">
+      <div class="section-header">
+        <h2>Hack  for a Sustainable Future</h2>
+      </div> 
+
+
+    <p>
+      Hack4Earth is designed to harness cutting-edge technologies to create solutions aligned with the Sustainable Development Goals (SDGs). This hackathon invites participants to collaborate, innovate, and develop transformative ideas for a more sustainable and equitable world.
+      This event presents a unique opportunity for multidisciplinary teams of 3-5 members, including engineers and researchers from fields like:
+    </p>
+  
+    <ul style="list-style-type: none; padding: 0;">
+      <li>- Data Science</li>
+      <li>- Computer Science</li>
+      <li>- Robotics</li>
+      <li>- Embedded Systems</li>
+      <li>- Agronomy</li>
+    </ul>
+  
+    <p>
+      Participants will use open-source platforms and services to create tools that address sustainability issues. Whether it's optimizing agriculture, improving resource management, or enhancing environmental monitoring, Hack4Earth fosters innovations that contribute to a sustainable future.
+    </p>
+  
+    <div style="text-align: center;">
+      <img src="img/csm_E_SDG_Poster_222e18d231.webp" width="850px" height="450px" style="display: block; margin-left: auto; margin-right: auto;" class="responsive-img">
+     <!-- 
+      <iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAEkL0ztUMjNVUFhMMVhSS1VBRVRGR0E1SkQ2UktYMC4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+    -->
+    
+  </div>
+  </div>
+  </section>
+  
+
+
+  <!--==========================
+      Sponsors Section
+    ============================-->
+   
+    <section id="evaluation-criteria" class="evaluation-section  wow fadeInUp ">
+      <div class="container">
+        <div class="section-header">
+          <h2>Evaluation Criteria </h2>
+        </div>
+        
+        <div class="criteria-list">
+          <h4>50% Technical Implementation of at least 1 of the lined out Goals</h4>
+          <ul>
+            <li>Use of the latest tools and frameworks</li>
+            <li>GitHub Repository + Documentation</li>
+            <li>Clear Concept</li>
+            <li>Code Architecture and Scalability</li>
+            <li>GitHub Workflow</li>
+          </ul>
+          
+          <h4>25% Idea and Business Viability (Innovative, Feasible, Viable)</h4>
+          
+          <h4>25% Presentation</h4>
+          <ul>
+            <li>7.5% 2-3 min Video of your Prototype </li>
+            <li>17.5% Pitch</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+
+
+   <!--==========================
+      Schedule Section
+    ============================-->
+    <section id="schedule" class="section-with-bg">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h2>Important Dates</h2>
+        </div>
+
+  <!--
+        <h3 class="sub-heading">Voluptatem nulla veniam soluta et corrupti consequatur neque eveniet officia. Eius
+          necessitatibus voluptatem quis labore perspiciatis quia.</h3>  -->
+
+        <div class="tab-content row justify-content-center">
+
+          <!-- Schdule Day 1 -->
+          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>September 15, 2024</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/icon.jpg" alt="Brenden Legros">
+                </div>
+                <h4>Open Registartion</span></h4>
+                <p>Registartion for teams ( Note that teams should be 3-5 Members and multidisplinary) </p>
+              </div>
+            </div> 
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>October 4, 2024, 09 am </time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/icon.jpg" alt="Brenden Legros">
+                </div>
+                <h4>Welcome Day</span></h4>
+                <p>Team formation and project  use case announcement </p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>October 4-14 , 2024</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/icon.jpg" alt="Hubert Hirthe">
+                </div>
+                <h4>Mentorship Sessions</h4>
+                <p>IA and GenIA & Blockchain & Pitching and Business Model &
+    Geospatial and Big data </p>
+
+
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>October 16 , 2024, 12pm</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/icon.jpg" alt="Cole Emmerich">
+                </div>
+                <h4>Delivarble </span></h4>
+                <p> Teams should deliver Documented Github repo + pitch slides + demo video  </p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>October 18 , 2024, 09 am</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/icon.jpg" alt="Jack Christiansen">
+                </div>
+                <h4>Pitch Day</h4>
+                <p>All teams will Pitch theirs Ideas in 5 min (+3 min Q&A), Then 8 finalist will be slected to present their projects during IEEE AICCSA conference.    </p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>October 18 , 2024, 09 am</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/icon.jpg" alt="Alejandrin Littel">
+                </div>
+                <h4>Finalist Pitch  Day  and Winners Selection</h4>
+                <p>The 8 finalists will pitch their projects and 3 winners will benn selected</p>
+              </div>
+            </div>
+
+            
+          </div>
+        
+
+        </div>
+
+      </div>
+
+    
+
+
+
+   <!--==========================
+      track Section
+    ============================-->
+    <section id="schedul" class="section-with-bg">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h2>Hackathon tracks</h2>
+          <h3 class="sub-heading">Hack4Earth tracks include, but are not limited to:
+          </h3>
+        </div>
+
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab">Track1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#day-2" role="tab" data-toggle="tab">Track2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#day-3" role="tab" data-toggle="tab">Track3</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#day-4" role="tab" data-toggle="tab">Track4</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#day-5" role="tab" data-toggle="tab">Track5</a>
+          </li>
+        </ul>
+
+        
+
+        <div class="tab-content row justify-content-center">
+
+          <!-- Schdule Day 1 -->
+          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+            <h3 class="sub-heading">UC1: Hack4 Sustainable Agritech 
+
+            </h3>
+    
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>UC1</time></div>
+<div class="col-md-10">
+  <p>AI-driven crop monitoring and yield prediction platform</p>
+</div>
+
+<div class="col-md-2"><time>UC1</time></div>
+<div class="col-md-10">
+  <p>AI-Driven Solution for Animal Health Monitoring</p>
+</div>
+
+<div class="col-md-2"><time>UC1</time></div>
+<div class="col-md-10">
+  <p>Sustainable Water Management Solutions</p>
+</div>
+
+<div class="col-md-2"><time>UC1</time></div>
+<div class="col-md-10">
+  <p>AI-Powered Climate-Resilient Crop Selection Models</p>
+</div>
+
+<div class="col-md-2"><time>UC1</time></div>
+<div class="col-md-10">
+  <p>Food Security Assessment Platform</p>
+</div>
+
+<div class="col-md-2"><time>UC1</time></div>
+<div class="col-md-10">
+  <p>Sustainable Pesticide Application</p>
+</div>
+
+<div class="col-md-2"><time>UC1</time></div>
+<div class="col-md-10">
+  <p>Drone-Based Precision Pesticide Application</p>
+</div>
+
+<div class="col-md-2"><time>UC1</time></div>
+<div class="col-md-10">
+  <p>Satellite-Based Solution for Farm/Greenhouse CO2 Emission Monitoring</p>
+</div>
+
+<div class="col-md-2"><time>UC1</time></div>
+<div class="col-md-10">
+  <p>Satellite-Based Monitoring System of Soil Health and Fertility</p>
+</div>
+
+<div class="col-md-2"><time>UC1</time></div>
+<div class="col-md-10">
+  <p>Geospatial Analytics for Land Use Optimization</p>
+</div>
+
+<div class="col-md-2"><time>UC1</time></div>
+<div class="col-md-10">
+  <p>Food Waste Reduction Platform</p>
+</div>
+
+<div class="col-md-2"><time>UC1</time></div>
+<div class="col-md-10">
+  <p>Blockchain Application for Supply Chain Traceability</p>
+</div>
+
+<div class="col-md-2"><time>UC1</time></div>
+<div class="col-md-10">
+  <p>Blockchain-Based Application for Incentivizing Sustainable Practices</p>
+</div>
+
+<div class="col-md-2"><time>UC1</time></div>
+<div class="col-md-10">
+  <p>Blockchain-Based Platform for Sustainable Project Crowdfunding</p>
+</div>
+
+<div class="col-md-2"><time>UC1</time></div>
+<div class="col-md-10">
+  <p>LLM (Large Language Model) for Personalized Recommendations</p>
+</div>
+
+<div class="col-md-2"><time>UC1</time></div>
+<div class="col-md-10">
+  <p>Digital Twins for Greenhouse Management</p>
+</div>
+
+<div class="col-md-2"><time>UC1</time></div>
+<div class="col-md-10">
+  <p>Multimodal Algorithms for Precision Agriculture</p>
+</div>
+
+<div class="col-md-2"><time>...</time></div>
+<div class="col-md-10">
+  <p>Any Other Interesting Application or Model</p>
+</div>
+
+
+            </div>
+
+            
+          </div>
+          <!-- End Schdule Day 1 -->
+
+          <!-- Schdule Day 2 -->
+          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
+            <h3 class="sub-heading">UC2: Hack4 Sustainable Urban Development </h3> 
+
+            <div class="row schedule-item">
+
+              <div class="col-md-2"><time>UC2</time></div>
+<div class="col-md-10">
+  <p>AI Model for Drone Multi-Object Detection</p>
+</div>
+
+<div class="col-md-2"><time>UC2</time></div>
+<div class="col-md-10">
+  <p>Digital Twins for Smart Cities</p>
+</div>
+
+<div class="col-md-2"><time>UC2</time></div>
+<div class="col-md-10">
+  <p>Real-Time Industrial CO2 Emission Monitoring Systems</p>
+</div>
+
+<div class="col-md-2"><time>UC2</time></div>
+<div class="col-md-10">
+  <p>AI-Driven Traffic Flow Management Model</p>
+</div>
+
+<div class="col-md-2"><time>UC2</time></div>
+<div class="col-md-10">
+  <p>Construction Site Monitoring and Progress Tracking Model</p>
+</div>
+
+<div class="col-md-2"><time>UC2</time></div>
+<div class="col-md-10">
+  <p>Fire Detection and Action Management Platform</p>
+</div>
+
+<div class="col-md-2"><time>UC2</time></div>
+<div class="col-md-10">
+  <p>Blockchain for Transparent Land Registries Platform</p>
+</div>
+
+<div class="col-md-2"><time>UC2</time></div>
+<div class="col-md-10">
+  <p>Blockchain-Backed Digital Identity for Smart Cities</p>
+</div>
+
+<div class="col-md-2"><time>UC2</time></div>
+<div class="col-md-10">
+  <p>Blockchain-Based Incentive Systems for Sustainable Behavior</p>
+</div>
+
+<div class="col-md-2"><time>UC2</time></div>
+<div class="col-md-10">
+  <p>Multimodal Algorithms for Disaster Preparedness and Response</p>
+</div>
+
+<div class="col-md-2"><time>UC2</time></div>
+<div class="col-md-10">
+  <p>Blockchain Platform for Incentivizing Public Transportation Use
+  </p>
+</div>
+<div class="col-md-2"><time>UC2</time></div>
+<div class="col-md-10">
+  <p>Digital Twins for Infrastructure Maintenance and Upgrades
+  </p>
+</div>
+
+
+<div class="col-md-2"><time>UC2</time></div>
+<div class="col-md-10">
+  <p>Circular Economy Platforms for Urban Waste Reduction
+  </p>
+</div>
+
+<div class="col-md-2"><time>UC2</time></div>
+<div class="col-md-10">
+  <p>Blockchain Platform for Tokenizing Recycled Materials
+
+
+  </p>
+</div>
+
+<div class="col-md-2"><time>...</time></div>
+<div class="col-md-10">
+  <p>Any Other Interesting Application or Model</p>
+</div>
+
+            </div>
+          </div>
+
+            <!-- Schdule Day 2 -->
+            <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-3">
+              <h3 class="sub-heading">UC3:Hack for Sustainable Energy  </h3> 
+  
+              <div class="row schedule-item">
+  
+                <div class="col-md-2"><time>UC3</time></div>
+  <div class="col-md-10">
+    <p>AI-Powered Renewable Energy Forecasting</p>
+  </div>
+  
+  <div class="col-md-2"><time>UC3</time></div>
+  <div class="col-md-10">
+    <p>Blockchain for Peer-to-Peer Energy Trading</p>
+  </div>
+  
+  <div class="col-md-2"><time>UC3</time></div>
+  <div class="col-md-10">
+    <p>AI  based Power Market Optimization Model
+    </p>
+  </div>
+  
+  <div class="col-md-2"><time>UC3</time></div>
+  <div class="col-md-10">
+    <p>Platform for Real World Asset (RWA) Tokenization for Renewable Energy
+    </p>
+  </div>
+  
+  <div class="col-md-2"><time>UC3</time></div>
+  <div class="col-md-10">
+    <p>Smart Grid Optimization Model
+    </p>
+  </div>
+  
+  <div class="col-md-2"><time>UC3</time></div>
+  <div class="col-md-10">
+    <p>Digital Twin for Energy Efficiency in Buildings
+    </p>
+  </div>
+  
+  <div class="col-md-2"><time>UC3</time></div>
+  <div class="col-md-10">
+    <p>AI-Driven Energy Consumption Analytics
+    </p>
+  </div>
+  
+  <div class="col-md-2"><time>UC3</time></div>
+  <div class="col-md-10">
+    <p>Renewable Energy Microgrids with Digital Twins
+    </p>
+  </div>
+  
+  <div class="col-md-2"><time>UC3</time></div>
+  <div class="col-md-10">
+    <p>Blockchain for Renewable Energy Certification
+    </p>
+  </div>
+  
+  <div class="col-md-2"><time>UC3</time></div>
+  <div class="col-md-10">
+    <p>IIoT-Based Smart Metering and Demand Response
+    </p>
+  </div>
+  
+  <div class="col-md-2"><time>UC3</time></div>
+  <div class="col-md-10">
+    <p>AI for Predictive Maintenance in Energy Infrastructure</p>
+  </div>
+  
+
+  <div class="col-md-2"><time>UC3</time></div>
+  <div class="col-md-10">
+    <p>Geospatial Analysis for Optimal Solar and Wind Farm Locations</p>
+  </div>
+
+  <div class="col-md-2"><time>UC3</time></div>
+  <div class="col-md-10">
+    <p>Remote Sensing for Identifying Optimal Locations for Geothermal Energy</p>
+  </div>
+
+  <div class="col-md-2"><time>UC3</time></div>
+  <div class="col-md-10">
+    <p>Remote sensing for carbon emission monitoring     </p>
+  </div>
+
+  <div class="col-md-2"><time>...</time></div>
+  <div class="col-md-10">
+    <p>Any Other Interesting Application or Model</p>
+  </div>
+  
+              </div>
+            </div>
+  
+           
+         
+          <!-- End Schdule Day 2 -->
+ <!-- Schdule Day 2 -->
+ <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-4">
+  <h3 class="sub-heading">UC4:Hack for climate change  </h3> 
+
+  <div class="row schedule-item">
+
+    <div class="col-md-2"><time>UC4</time></div>
+<div class="col-md-10">
+<p>Remote Sensing for Deforestation and Land Use Change Detection
+</p>
+</div>
+
+<div class="col-md-2"><time>UC4</time></div>
+<div class="col-md-10">
+<p>Real time fire detection and action management platform </p>
+</div>
+
+<div class="col-md-2"><time>UC4</time></div>
+<div class="col-md-10">
+<p>AI-Driven Climate Change Prediction Models</p>
+</div>
+
+<div class="col-md-2"><time>UC4</time></div>
+<div class="col-md-10">
+<p>Blockchain for Carbon Credit Verification and Trading
+</p>
+</div>
+
+<div class="col-md-2"><time>UC4</time></div>
+<div class="col-md-10">
+<p>Geospatial Analysis for Climate Vulnerability Mapping
+</p>
+</div>
+
+<div class="col-md-2"><time>UC4</time></div>
+<div class="col-md-10">
+<p>IoT Networks for Real-Time Climate Data Collection
+</p>
+</div>
+
+<div class="col-md-2"><time>UC4</time></div>
+<div class="col-md-10">
+<p>AI-Enhanced Disaster Preparedness and Response</p>
+</div>
+
+<div class="col-md-2"><time>UC4</time></div>
+<div class="col-md-10">
+<p>Drone-Based Environmental Monitoring</p>
+</div>
+
+<div class="col-md-2"><time>UC4</time></div>
+<div class="col-md-10">
+<p>Digital Twins for Simulating Climate Mitigation Strategies
+</p>
+</div>
+
+<div class="col-md-2"><time>UC4</time></div>
+<div class="col-md-10">
+<p>AI for Optimizing Water Resource Management in Climate-Affected Areas
+</p>
+</div>
+
+
+<div class="col-md-2"><time>UC4</time></div>
+<div class="col-md-10">
+<p>Geospatial Tools for Coastal Erosion Monitoring
+
+</p>
+</div>
+
+<div class="col-md-2"><time>UC4</time></div>
+<div class="col-md-10">
+<p>Blockchain-Enabled Global Collaboration on Climate Actions
+
+</p>
+</div>
+
+<div class="col-md-2"><time>...</time></div>
+<div class="col-md-10">
+<p>Any Other Interesting Application or Model</p>
+</div>
+
+  </div>
+</div>
+
+
+ <!-- Schdule Day 2 -->
+ <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-5">
+  <h3 class="sub-heading">UC5: Hack4 Sustainable Industry 5.0
+  </h3> 
+
+  <div class="row schedule-item">
+
+    <div class="col-md-2"><time>UC5</time></div>
+<div class="col-md-10">
+<p>AI-Driven Energy Optimization in Smart Factories</p>
+</div>
+
+<div class="col-md-2"><time>UC5</time></div>
+<div class="col-md-10">
+<p>Carbon Footprint Monotring Tools for Industrial Processes  </p>
+</div>
+
+<div class="col-md-2"><time>UC5</time></div>
+<div class="col-md-10">
+<p>IoT-Based Monitoring for Reducing Industrial Emissions
+</p>
+</div>
+
+<div class="col-md-2"><time>UC5</time></div>
+<div class="col-md-10">
+<p>Digital Twins for Sustainable Manufacturing Processes
+</p>
+</div>
+
+<div class="col-md-2"><time>UC5</time></div>
+<div class="col-md-10">
+<p>Geospatial Analytics for Identifying Low-Impact Industrial Sites
+
+</p>
+</div>
+
+<div class="col-md-2"><time>UC5</time></div>
+<div class="col-md-10">
+<p>AI driven Predictive Maintenance to Minimize Resource Waste
+</p>
+</div>
+
+<div class="col-md-2"><time>UC5</time></div>
+<div class="col-md-10">
+<p>Blockchain-Based Systems for Tracking Industrial Sustainability Metrics
+</p>
+</div>
+
+<div class="col-md-2"><time>UC5</time></div>
+<div class="col-md-10">
+<p>Remote Sensing for Monitoring Industrial Pollution
+</p>
+</div>
+
+<div class="col-md-2"><time>UC5</time></div>
+<div class="col-md-10">
+<p>Multimodal AI for Climate-Resilient Industrial Operations
+</p>
+</div>
+
+<div class="col-md-2"><time>UC5</time></div>
+<div class="col-md-10">
+<p>Circular Economy Platforms for Industrial Byproduct Reuse
+</p>
+</div>
+
+<div class="col-md-2"><time>UC5</time></div>
+<div class="col-md-10">
+<p>AI for Sustainable Product Lifecycle Management
+
+</p>
+</div>
+
+
+
+<div class="col-md-2"><time>UC5</time></div>
+<div class="col-md-10">
+<p>Digital Twins for Circular Manufacturing Processes
+</p>
+</div>
+
+<div class="col-md-2"><time>UC5</time></div>
+<div class="col-md-10">
+<p>Big Data Analytics Platform for Real-Time Decision Making
+
+</p>
+</div>
+
+<div class="col-md-2"><time>UC5</time></div>
+<div class="col-md-10">
+<p>LLM-Based Platforms for Sustainable Industrial Decision-Making
+
+</p>
+</div>
+
+<div class="col-md-2"><time>...</time></div>
+<div class="col-md-10">
+<p>Any Other Interesting Application or Model</p>
+</div>
+
+  </div>
+</div>
+<!-- End Schdule Day 2 -->
+
+        </div>
+
+
+    </section>
+
+
+
+   
+    
+
+
+
+    <section id="prizes" class="prizes-section wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Prizes </h2>
+        </div>
+
+        <div class="row">
+          <!-- First Prize -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card prize-card">
+              <img src="img/st.png" class="card-img-top" alt="First Prize Image">
+              <div class="card-body">
+                <h4 class="card-title">1st Place</h4>
+                <p class="card-text">5000dt</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Second Prize -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card prize-card">
+              <img src="img/nd.png" class="card-img-top" alt="Second Prize Image">
+              <div class="card-body">
+                <h4 class="card-title">2nd Place</h4>
+                <p class="card-text">3000dt</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Third Prize -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card prize-card">
+              <img src="img/rd.png"  class="card-img-top" alt="Third Prize Image">
+              <div class="card-body">
+                <h4 class="card-title">3rd Place</h4>
+                <p class="card-text">2000dt</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+  
+
+    <!--==========================
+      Speakers Section
+    ============================-->
+    <section id="speakers" class="wow fadeInUp">
+      <div class="container">
+        
+        <div class="section-header">
+          <h2>Judge Members</h2>
+
+        </div>
+        <div class="row">
+        <h3> To be announced soon ...</h3>
+        </div>
+       <!--
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/mah.jpeg" alt="Speaker 1" class="img-fluid">
+              <div class="details">
+                <h3><a href="speaker-details.html">Maher Boughdiri</a></h3>
+                <p>Quas alias incidunt</p>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/rabeh.png" alt="Speaker 2" class="img-fluid">
+              <div class="details">
+                <h3><a href="speaker-details.html">Pr RAbeh ATTIA</a></h3>
+                <p>Professor</p>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/tako.png" alt="Speaker 3" class="img-fluid">
+              <div class="details">
+                <h3><a href="speaker-details.html">Pr Abdellatif Takoua</a></h3>
+                <p>Associate professor</p>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""> </div>
+              </div>
+            </div>
+          </div>
+        -->
+    
+          
+        </div>
+      </div>
+
+    </section>
+
+    
+    <section id="supporters" class="section-with-bg wow fadeInUp">
+        <div class="container">
+          <div class="section-header">
+            <h2>Partners & Sponsors</h2>
+            <p>Interested in Sponsoring the event?</p>
+            <li class="sponsor-button-container">
+              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAEkL0ztUMjNVUFhMMVhSS1VBRVRGR0E1SkQ2UktYMC4u" class="sponsor-button">Be a Sponsor</a>
+            </li>
+          </div>
+
+        <div class="row no-gutters supporters-wrap clearfix">
+
+         
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/aiccsa.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/sercom.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/Horizon.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/esgitech.svg" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/gallery/ieee.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+        
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/logopep.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          
+        
+          
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/eptt.png" class="img-fluid" alt="">
+            </div>
+          </div>
+        
+          
+         
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/gallery/carthage.png" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    
+    <section id="organizing-team" class="team-section wow fadeInUp">
+      <div class="container">
+       
+        <div class="section-header">
+          <h2>organizing Team
+          </h2>
+          </div>
+        <div class="row justify-content-center">
+          <!-- Team Member 1 -->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="team-card">
+              <div class="team-img">
+                <img src="./img/rabeh.png" alt="Team Member 1" class="img-fluid rounded-circle">
+              </div>
+              <div class="team-info">
+                <h4>Rabeh ATTIA </h4>
+                <p>Professor & President SERCOM Lab </p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Team Member 2 -->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="team-card">
+              <div class="team-img">
+                <img src="./img/tako.png" alt="Team Member 2" class="img-fluid rounded-circle">
+              </div>
+              <div class="team-info">
+                <h4>Takoua Abdellatif</h4>
+                <p>Associate Professor & Senior Researcher </p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Team Member 3 -->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="team-card">
+              <div class="team-img">
+                <img src="./img/maher.jpeg" alt="Team Member 3" class="img-fluid rounded-circle">
+              </div>
+              <div class="team-info">
+                <h4>Maher Boughdiri</h4>
+                <p>Blockchain Researcher & Phd Student </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="team-card">
+              <div class="team-img">
+                <img src="./img/w.png" alt="Team Member 3" class="img-fluid rounded-circle">
+              </div>
+              <div class="team-info">
+                <h4>Imen Boudali </h4>
+                <p>  Assistant  Professor & Senior Researcher</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="team-card">
+              <div class="team-img">
+                <img src="./img/w.png" alt="Team Member 3" class="img-fluid rounded-circle">
+              </div>
+              <div class="team-info">
+                <h4>Olfa Bebes </h4>
+                <p>  Assistant  Professor & Senior Researcher</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="team-card">
+              <div class="team-img">
+                <img src="./img/moh.png" alt="Team Member 3" class="img-fluid rounded-circle">
+              </div>
+              <div class="team-info">
+                <h4>Mohamed Hkima</h4>
+                <p>  IT Engineer & Phd Student</p>
+              </div>
+            </div>
+          </div>
+          
+          
+          <!-- Additional team members can be added here in a similar format -->
+        </div>
+      </div>
+    </section>
+    
+
+    
+    <!--==========================
+      Venue Section
+    ============================-->
+    <section id="venue" class="wow fadeInUp">
+
+      <div class="container-fluid">
+
+        <div class="section-header">
+          <h2>Event Venue</h2>
+          <p>Event venue location info and gallery</p>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-lg-6 venue-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.4432132250818!2d10.33487297604027!3d36.87974406321131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12e2b48f93881a11%3A0x65c08df7a3ef6533!2s%C3%89cole%20Polytechnique%20de%20Tunisie!5e0!3m2!1sen!2stn!4v1725232900901!5m2!1sen!2stn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="venue-gallery">
+                  <img src="img/ept3.jpg" alt="" class="img-fluid" >
+                </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+                <img src="img/amphi.jpeg" alt="" class="img-fluid" >
+              </a>
+          </div>
+        </div>
+        </div>
+
+      </div>
+
+      
+
+    </section>
+
+
+
+
+   
+
+    <!--==========================
+      F.A.Q Section
+    ============================-->
+    <section id="faq" class="wow fadeInUp">
+
+      <div class="container">
+
+        <div class="section-header">
+          <h2>F.A.Q </h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <ul id="faq-list">
+
+              <li>
+                <a data-toggle="collapse" class="collapsed" href="#faq1">What is Hack4Hackathon? <i class="fa fa-minus-circle"></i></a>
+                <div id="faq1" class="collapse" data-parent="#faq-list">
+                  <p>
+                    Hack4Hackathon is an innovative event where participants come together to develop solutions that address specific challenges. It encourages creativity, collaboration, and the use of cutting-edge technology to solve real-world problems.
+                  </p>
+                </div>
+              </li>
+            
+              <li>
+                <a data-toggle="collapse" href="#faq2" class="collapsed">Who can participate in Hack4Hackathon? <i class="fa fa-minus-circle"></i></a>
+                <div id="faq2" class="collapse" data-parent="#faq-list">
+                  <p>
+                    Hack4Hackathon is open to everyone, including students, professionals, and enthusiasts from all backgrounds. Whether you are a developer, designer, project manager, or just passionate about innovation, you are welcome to join.
+                  </p>
+                </div>
+              </li>
+            
+              <li>
+                <a data-toggle="collapse" href="#faq3" class="collapsed">Do I need to have a team before joining? <i class="fa fa-minus-circle"></i></a>
+                <div id="faq3" class="collapse" data-parent="#faq-list">
+                  <p>
+                    No, you don't need to have a team before joining. You can join as an individual, and we will help you form a team during the event. However, if you already have a team, you're welcome to participate together.
+                  </p>
+                </div>
+              </li>
+            
+              <li>
+                <a data-toggle="collapse" href="#faq4" class="collapsed">What are the tracks or themes for the hackathon? <i class="fa fa-minus-circle"></i></a>
+                <div id="faq4" class="collapse" data-parent="#faq-list">
+                  <p>
+                    Hack4Hackathon offers several tracks, including Industry 5.0, Sustainability, Circular Economy, and more. Each track focuses on creating solutions that can have a significant impact on the corresponding field.
+                  </p>
+                </div>
+              </li>
+            
+              <li>
+                <a data-toggle="collapse" href="#faq5" class="collapsed">What will I need to participate? <i class="fa fa-minus-circle"></i></a>
+                <div id="faq5" class="collapse" data-parent="#faq-list">
+                  <p>
+                    To participate, you will need a computer, a stable internet connection, and any tools or software required for your project. We will provide the necessary resources and mentorship to help you succeed.
+                  </p>
+                </div>
+              </li>
+            
+              <li>
+                <a data-toggle="collapse" href="#faq6" class="collapsed">Are there any prizes for the winners? <i class="fa fa-minus-circle"></i></a>
+                <div id="faq6" class="collapse" data-parent="#faq-list">
+                  <p>
+                    Yes, there are exciting prizes for the top teams in each track. Prizes include cash rewards, gadgets, and opportunities for mentorship and incubation. The specifics will be announced closer to the event date.
+                  </p>
+                </div>
+              </li>
+            
+              <li>
+                <a data-toggle="collapse" href="#faq7" class="collapsed">How will the projects be judged? <i class="fa fa-minus-circle"></i></a>
+                <div id="faq7" class="collapse" data-parent="#faq-list">
+                  <p>
+                    Projects will be evaluated based on technical implementation, innovation, feasibility, and business viability. The judging panel will consist of experts from various fields, and the criteria will be shared in advance.
+                  </p>
+                </div>
+              </li>
+            
+              <li>
+                <a data-toggle="collapse" href="#faq8" class="collapsed">How can I prepare for the hackathon? <i class="fa fa-minus-circle"></i></a>
+                <div id="faq8" class="collapse" data-parent="#faq-list">
+                  <p>
+                    To prepare for the hackathon, familiarize yourself with the tracks and challenges, gather any necessary tools or resources, and consider forming a team. Additionally, practice coding, problem-solving, and time management skills.
+                  </p>
+                </div>
+              </li>
+            
+              <li>
+                <a data-toggle="collapse" href="#faq9" class="collapsed">What happens after the hackathon? <i class="fa fa-minus-circle"></i></a>
+                <div id="faq9" class="collapse" data-parent="#faq-list">
+                  <p>
+                    After the hackathon, winners will be awarded their prizes, and all participants will have the opportunity to showcase their projects. Some teams may receive opportunities for further development, incubation, or mentorship.
+                  </p>
+                </div>
+              </li>
+            
+            </ul>
+            
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--==========================
+      Subscribe Section
+    ============================-->
+    <section id="subscribe">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h2>Newsletter</h2>
+          <p>subscribe to receive our news and updates</p>
+        </div>
+
+        <form method="POST" action="#">
+          <div class="form-row justify-content-center">
+            <div class="col-auto">
+              <input type="text" class="form-control" placeholder="Enter your Email">
+            </div>
+            <div class="col-auto">
+              <button type="submit">Subscribe</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </section>
+
+    <!-- 
+    <section id="buy-tickets" class="section-with-bg wow fadeInUp">
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Buy Tickets</h2>
+          <p>Velit consequatur consequatur inventore iste fugit unde omnis eum aut.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">Standard Access</h5>
+                <h6 class="card-price text-center">$150</h6>
+                <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Community Access</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Workshop Access</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>After Party</li>
+                </ul>
+                <hr>
+                <div class="text-center">
+                  <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">Pro Access</h5>
+                <h6 class="card-price text-center">$250</h6>
+                <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Community Access</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Workshop Access</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>After Party</li>
+                </ul>
+                <hr>
+                <div class="text-center">
+                  <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="pro-access">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">Premium Access</h5>
+                <h6 class="card-price text-center">$350</h6>
+                <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Community Access</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Workshop Access</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>After Party</li>
+                </ul>
+                <hr>
+                <div class="text-center">
+                  <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="premium-access">Buy Now</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="buy-ticket-modal" class="modal fade">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Buy Tickets</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form method="POST" action="#">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="your-name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="your-email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                  <select id="ticket-type" name="ticket-type" class="form-control" >
+                    <option value="">-- Select Your Ticket Type --</option>
+                    <option value="standard-access">Standard Access</option>
+                    <option value="pro-access">Pro Access</option>
+                    <option value="premium-access">Premium Access</option>
+                  </select>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn">Buy Now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp">
+
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Contact Us</h2>
+          <p></p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Address</h3>
+              <address>École Polytechnique de Tunisie, V8HP+VXW, Rue El Khawarizmi, Carthage</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Phone Number & Email</h3>
+              <p><a href="tel:+21642436621">+21642436621</a></p>
+              <p><a href="mailto:info@example.com">Hack4earth@outlook.com</a></p>
+
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Websites</h3>
+              <p><a href="https://www.ept.tn/">EPT </a></p>
+              <p><a href="https://sercomlab.tn/">SERCOLM laboratory </a></p>
+              <p><a href="https://aiccsa.net/AICCSA2024/">AICCSA2024 </a></p>
+
+            </div>
+          </div>
+         
+        </div>
+
+        <div class="form">
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <img src="img/sustainble.png" alt="TheEvenet">
+            <p> Hack4Earth Hackathon: Hack for a Sustainable Future</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Home</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">About us</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Services</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+         
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              École Polytechnique de Tunisie, <br> V8HP+VXW, Rue El Khawarizmi, Carthage 
+              <br>
+              <strong>Phone:</strong> +21622222222<br>
+              <strong>Email:</strong> Hack4Earth@outlook.com<br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Hack4Earth</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+        -->
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
