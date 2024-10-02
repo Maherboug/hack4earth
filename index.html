@@ -116,6 +116,63 @@
   color: #777;
 }
 
+    
+    .schedule-item {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+    .schedule-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .schedule-item time {
+      font-size: 1.2em;
+      color: #555;
+      margin-right: 20px;
+      flex: 1 1 100px;
+    }
+    .schedule-detail h4 {
+      margin: 0 0 10px;
+      font-size: 1.4em;
+      color: #333;
+    }
+    .schedule-detail p {
+      margin: 0;
+      color: #666;
+      line-height: 1.6;
+    }
+    .schedule-detail p strong {
+      color: #333;
+    }
+    .schedule-detail span {
+      color: #999;
+    }
+    .speaker img {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+    .animated-by {
+      font-weight: bold;
+    }
+    .name {
+      color: #007BFF;
+    }
+    @media (max-width: 600px) {
+      .schedule-item {
+        flex-direction: column;
+      }
+      .schedule-item time {
+        margin-bottom: 10px;
+        margin-right: 0;
+      }
+    }
 /* Responsive Design */
 @media (max-width: 768px) {
   .team-card {
@@ -170,6 +227,7 @@
       width: 450;
       height: 250;
   }
+
 }
 
 
@@ -460,29 +518,78 @@
             </div> 
 
             <div class="row schedule-item">
-              <div class="col-md-2"><time>October 4, 2024, 09 am </time></div>
+              <div class="col-md-2">
+                <time>October 4, 2024</time>
+              </div>
               <div class="col-md-10">
                 <div class="speaker">
                   <img src="img/icon.jpg" alt="Brenden Legros">
                 </div>
-                <h4>Welcome Day<span> (Onsite-EPT)</span> </h4>
-                <p>Team formation and project  use case announcement </p>
+                <div class="schedule-container">
+                 
+                      <div class="schedule-detail">
+                        <h4>Welcome Day<span> (Onsite-EPT)</span></h4>
+                        <p>
+                          <strong>8:30 AM - 9:00 AM:</strong> Registration & Participants Check-in<br>
+                          <strong>9:00 AM - 10:45 AM:</strong> Opening Ceremony<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;- Welcome speech by Mrs. President of the University of Carthage (10 min)<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;- Welcome speech by Mr. EPT Director, University of Carthage (10 min)<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;- Introduction to the Hackathon (15 min)<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;- Sponsors Intervention (1h)<br>
+                          <strong>10:45 AM–11:15 AM:</strong> Coffee Break and Networking<br>
+                          <strong>11:15 AM–12:45 PM:</strong> Workshop Session 1<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;- Workshop 1: <strong> Global Climate Fluctuations Impact on Rainfall Regime Variability</strong><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Key words: Big Data, Geospatial Data, Climate Fluctuations<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data and tools: Large databases (Big Data), Geospatial data, R-software, GIS tool (ArcMap)<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="animated-by">Animated by:</span> <span class="name"><strong> Dr. Ezzine Ahmed & Dr. Ben Othman Dhouha (OSS)</strong> </span><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;- Workshop 2: <strong> Hedera Blockchain & Hedera Certification (Dar Blockchain)</strong> <br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Key words: Blockchain, Web3, Hedera, Solidity<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="animated-by">Animated by:</span> <span class="name"><strong> Eng. Ala Chahtour (Dar Blockchain)</strong> </span><br>
+                          <strong>1:00 PM–2:00 PM:</strong> Lunch<br>
+                          <strong>2:00 PM–3:30 PM:</strong> Workshop Session 2<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;- Workshop 1:<strong>  Gen AI for Climate Change</strong> <br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Key words: LLM, RAG, GenAI, ClimateChange <br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="animated-by">Animated by:</span> <span class="name"><strong> Eng. Said Akkari (EY)</strong> </span><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;- Workshop 2: <strong> Real-Time CO2 Emissions Monitoring</strong> <br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use Case 1: Optimal Pixel Selection of Sentinel-2 Satellite Data<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use Case 2: ML Algorithms for CO2 Emissions from Power Plants<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Key words: Satellite Data, ML, CO2 Emissions<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="animated-by">Animated by:</span> <span class="name"><strong> Dr. Stefan Kermer (Carbon Insights)</strong> </span><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;- Workshop 3:<strong>  Deep Learning for Earth</strong> <br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Key words: ML, Image & Signal Processing<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="animated-by">Animated by:</span> <span class="name"><strong> Dr. Wided Souidene (SERCOM Lab, EPT)</strong> </span>
+                        </p>
+                      </div>
+                  </div>
+                </div>
               </div>
-            </div>
-
+          
             <div class="row schedule-item">
-              <div class="col-md-2"><time>October 4-14 , 2024</time></div>
+              <div class="col-md-2"><time>October 4-14, 2024</time></div>
               <div class="col-md-10">
                 <div class="speaker">
                   <img src="img/icon.jpg" alt="Hubert Hirthe">
                 </div>
-                <h4>Mentorship Sessions <span> (Online)</span></h4>
-                <p>IA and GenIA & Blockchain & Pitching and Business Model &
-    Geospatial and Big data </p>
-
-
+                <div class="schedule-detail">
+                  <h4>Mentorship Sessions & Checkpoints<span> (Online)</span></h4>
+              
+                  <p>
+                    <strong>Checkpoint 1: Progress Update</strong> - October 8, 2024 (Online)<br>
+                    Teams submit a brief progress update to organizers.<br>
+                    Optional: Short presentations to showcase initial progress.<br><br>
+        
+                    <strong>Checkpoint 2: Progress Update</strong> - October 11, 2024 (Onsite Pipinère, EPT)<br>
+                    Business Model, BMC, Pitch Deck, Canva Model<br>
+                    Pitch correction, guidance, and improvement.<br><br>
+        
+                    <strong>Checkpoint 3: Progress Update</strong> - October 15, 2024 (Online)<br>
+                    Teams submit a brief progress update to organizers.<br>
+                    Optional: Short presentations to showcase progress.
+                  </p>
+                </div>
               </div>
             </div>
+
 
             <div class="row schedule-item">
               <div class="col-md-2"><time>October 16 , 2024, 12pm</time></div>
@@ -503,7 +610,7 @@
                   <img src="img/icon.jpg" alt="Jack Christiansen">
                 </div>
                 <h4>Pitch Day <span> (Onsite-EPT)</span></h4>
-                <p>All teams will pitch theirs ideas in 5 min (+3 min Q&A), Then 8 finalists will be selected to present their projects during IEEE AICCSA conference.    </p>
+                <p>All teams will pitch theirs ideas in 5 min (+3 min Q&A), Then 05 finalists will be selected to present their projects during IEEE AICCSA conference.    </p>
               </div>
             </div>
 
@@ -514,7 +621,7 @@
                   <img src="img/icon.jpg" alt="Alejandrin Littel">
                 </div>
                 <h4>Finalist Pitch  Day  and Winners Selection <span> (OnSite- SouSe (AICCSA conf)) </span></h4>
-                <p>The 8 finalists will pitch their projects, and 3 winners will be selected.</p>
+                <p>The 5 finalists will pitch their projects, and 3 winners will be selected.</p>
               </div>
             </div>
 
